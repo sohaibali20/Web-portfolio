@@ -27,7 +27,8 @@
   1. Base
 -------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800&display=swap");
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -179,7 +180,8 @@ img {
   color: transparent;
 }
 
-.link-hover span:before, .link-hover span:after {
+.link-hover span:before,
+.link-hover span:after {
   content: attr(data-text);
   position: absolute;
   left: 0;
@@ -305,7 +307,8 @@ textarea {
   transition: ease-out 0.16s;
 }
 
-input:not(.form-check-input):focus, input:not(.form-check-input):active,
+input:not(.form-check-input):focus,
+input:not(.form-check-input):active,
 textarea:focus,
 textarea:active {
   outline: 0;
@@ -316,31 +319,45 @@ textarea {
   height: 160px;
 }
 
-input:not(.form-check-input), textarea, .form-control {
+input:not(.form-check-input),
+textarea,
+.form-control {
   color: rgba(255, 255, 255, 0.8);
 }
 
-input:not(.form-check-input)::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
+input:not(.form-check-input)::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-input:not(.form-check-input)::-moz-placeholder, textarea::-moz-placeholder, .form-control::-moz-placeholder {
+input:not(.form-check-input)::-moz-placeholder,
+textarea::-moz-placeholder,
+.form-control::-moz-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-input:not(.form-check-input):-ms-placeholder, textarea:-ms-placeholder, .form-control:-ms-placeholder {
+input:not(.form-check-input):-ms-placeholder,
+textarea:-ms-placeholder,
+.form-control:-ms-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-input:not(.form-check-input)::-ms-placeholder, textarea::-ms-placeholder, .form-control::-ms-placeholder {
+input:not(.form-check-input)::-ms-placeholder,
+textarea::-ms-placeholder,
+.form-control::-ms-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-input:not(.form-check-input)::placeholder, textarea::placeholder, .form-control::placeholder {
+input:not(.form-check-input)::placeholder,
+textarea::placeholder,
+.form-control::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-input:not(.form-check-input):focus, textarea:focus, .form-control:focus {
+input:not(.form-check-input):focus,
+textarea:focus,
+.form-control:focus {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -360,11 +377,11 @@ label {
 }
 
 .submit-result span#success {
-  color: #32CD32;
+  color: #32cd32;
 }
 
 .submit-result span#error {
-  color: #E32227;
+  color: #e32227;
 }
 
 .submit-result span .error-color {
@@ -383,7 +400,8 @@ ul li a {
   transition: linear 0.1s;
 }
 
-ul[class*=' list-'], ul[class^='list-'] {
+ul[class*=" list-"],
+ul[class^="list-"] {
   padding: 0;
 }
 
@@ -391,7 +409,8 @@ ul.list-unstyled li {
   list-style-type: none;
 }
 
-ul[class*=' list-inline'] li, ul[class^='list-inline'] li {
+ul[class*=" list-inline"] li,
+ul[class^="list-inline"] li {
   display: inline-block;
 }
 
@@ -417,7 +436,7 @@ ul.list-inline-dot li {
 }
 
 ul.list-inline-dot li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -454,7 +473,12 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: -0.3px;
   color: white;
   font-family: "Outfit", sans-serif;
@@ -513,7 +537,7 @@ p {
 }
 
 .title-heading:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -585,7 +609,10 @@ button {
   cursor: pointer;
 }
 
-a:focus, a:active, button:focus, button:active {
+a:focus,
+a:active,
+button:focus,
+button:active {
   box-shadow: none;
   outline: 0;
 }
@@ -609,14 +636,19 @@ a:focus, a:active, button:focus, button:active {
 }
 
 .button:after {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 100%;
   -webkit-transition: linear 0.1s;
@@ -629,7 +661,8 @@ a:focus, a:active, button:focus, button:active {
   color: transparent;
 }
 
-.button span:before, .button span:after {
+.button span:before,
+.button span:after {
   content: attr(data-text);
   position: absolute;
   left: 0;
@@ -686,7 +719,8 @@ a:focus, a:active, button:focus, button:active {
   display: none;
 }
 
-.button-white span:before, .button-white span:after {
+.button-white span:before,
+.button-white span:after {
   color: black;
 }
 
@@ -700,7 +734,7 @@ a:focus, a:active, button:focus, button:active {
 }
 
 .button-dot:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 32px;
@@ -758,14 +792,19 @@ a:focus, a:active, button:focus, button:active {
 }
 
 .button-circle:before {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 100%;
   -webkit-transition: linear 0.1s;
@@ -863,14 +902,19 @@ a:focus, a:active, button:focus, button:active {
 
 .fancy-box:before {
   z-index: -1;
-  content: '';
+  content: "";
   visibility: hidden;
   opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 100%;
   -webkit-transition: linear 0.1s;
@@ -878,12 +922,17 @@ a:focus, a:active, button:focus, button:active {
 }
 
 .fancy-box:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 2px;
   -webkit-transition: linear 0.1s;
@@ -917,15 +966,15 @@ a:focus, a:active, button:focus, button:active {
   display: block;
 }
 
-.lightbox-image-box[class*='border-radius'],
-.lightbox-media-box[class*='border-radius'] {
+.lightbox-image-box[class*="border-radius"],
+.lightbox-media-box[class*="border-radius"] {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .lightbox-image-box:after,
 .lightbox-media-box:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -933,7 +982,12 @@ a:focus, a:active, button:focus, button:active {
   left: 0;
   opacity: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
 }
@@ -1003,7 +1057,8 @@ a:focus, a:active, button:focus, button:active {
   opacity: 0.97;
 }
 
-.mfp-removing .mfp-container, .mfp-removing.mfp-bg {
+.mfp-removing .mfp-container,
+.mfp-removing.mfp-bg {
   opacity: 0;
 }
 
@@ -1068,14 +1123,16 @@ button.mfp-close:hover {
   button.mfp-arrow-left {
     margin-left: 20px;
   }
-  button.mfp-arrow-left:before, button.mfp-arrow-left:after {
+  button.mfp-arrow-left:before,
+  button.mfp-arrow-left:after {
     margin-top: 15px;
     margin-left: 20px;
   }
   button.mfp-arrow-right {
     margin-right: 20px;
   }
-  button.mfp-arrow-right:before, button.mfp-arrow-right:after {
+  button.mfp-arrow-right:before,
+  button.mfp-arrow-right:after {
     margin-top: 15px;
     margin-left: 30px;
   }
@@ -1094,7 +1151,8 @@ button.mfp-close:hover {
   font-size: 14px;
 }
 
-.mfp-iframe-scaler iframe, .mfp-figure::after {
+.mfp-iframe-scaler iframe,
+.mfp-figure::after {
   -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
 }
@@ -1144,14 +1202,19 @@ button.mfp-close:hover {
 
 .service-box:before {
   z-index: -1;
-  content: '';
+  content: "";
   visibility: hidden;
   opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 100%;
   -webkit-transition: linear 0.1s;
@@ -1159,12 +1222,17 @@ button.mfp-close:hover {
 }
 
 .service-box:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 2px;
   -webkit-transition: linear 0.1s;
@@ -1254,10 +1322,17 @@ button.mfp-close:hover {
   border-radius: 1px;
 }
 
-.swiper-testimonial-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
-.swiper-testimonial-pagination.swiper-pagination-horizontal .swiper-pagination-progressbar-fill {
+.swiper-testimonial-pagination.swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill,
+.swiper-testimonial-pagination.swiper-pagination-horizontal
+  .swiper-pagination-progressbar-fill {
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
 }
 
 .testimonial-box {
@@ -1265,7 +1340,7 @@ button.mfp-close:hover {
 }
 
 .testimonial-box:before {
-  content: '\f10e';
+  content: "\f10e";
   z-index: -1;
   opacity: 0.2;
   position: absolute;
@@ -1348,14 +1423,19 @@ button.mfp-close:hover {
 }
 
 .blog-post-box .blog-post-img .blog-post-img-link:before {
-  content: '';
+  content: "";
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 100%;
   -webkit-transition: linear 0.1s;
@@ -1394,7 +1474,8 @@ button.mfp-close:hover {
   color: transparent;
 }
 
-.blog-post-box .blog-post-img .blog-post-category span:before, .blog-post-box .blog-post-img .blog-post-category span:after {
+.blog-post-box .blog-post-img .blog-post-category span:before,
+.blog-post-box .blog-post-img .blog-post-category span:after {
   content: attr(data-text);
   position: absolute;
   left: 0;
@@ -1463,7 +1544,8 @@ button.mfp-close:hover {
   opacity: 1;
 }
 
-.blog-slider.swiper, .blog-slider.swiper-container {
+.blog-slider.swiper,
+.blog-slider.swiper-container {
   overflow: visible;
 }
 
@@ -1537,12 +1619,17 @@ button.mfp-close:hover {
 }
 
 .header .header-wrapper .header-nav .nav-box:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 100%;
   border-radius: 0.5em;
@@ -1588,11 +1675,13 @@ button.mfp-close:hover {
   transition: linear 0.1s;
 }
 
-.header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link:hover, .header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link.active {
+.header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link:hover,
+.header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link.active {
   padding-left: 26px;
 }
 
-.header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link:hover i, .header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link.active i {
+.header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link:hover i,
+.header .header-wrapper .header-nav .nav-box .nav .nav-item .nav-link.active i {
   visibility: visible;
   opacity: 1;
 }
@@ -1650,14 +1739,19 @@ button.mfp-close:hover {
 }
 
 .portfolio-box .portfolio-img a:before {
-  content: '';
+  content: "";
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   background-color: #ff82f3;
-  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   width: 100%;
   height: 100%;
   -webkit-transition: linear 0.1s;
@@ -1710,7 +1804,8 @@ button.mfp-close:hover {
   opacity: 1;
 }
 
-.portfolio-slider.swiper, .portfolio-slider.swiper-container {
+.portfolio-slider.swiper,
+.portfolio-slider.swiper-container {
   overflow: visible;
 }
 
@@ -1722,7 +1817,7 @@ button.mfp-close:hover {
   15. Preloader
 -------------------------------------------------*/
 body:after {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -1843,54 +1938,162 @@ body.loaded:after {
 }
 
 .bg-green {
-  background: #32CD32;
+  background: #32cd32;
 }
 
 .bg-red {
-  background: #E32227;
+  background: #e32227;
 }
 
 .bg-yellow {
-  background: #FFAE42;
+  background: #ffae42;
 }
 
-.bg-light-content, .bg-white, .bg-dark .bg-white, *[class*='bg-black'] .bg-white {
+.bg-light-content,
+.bg-white,
+.bg-dark .bg-white,
+*[class*="bg-black"] .bg-white {
   color: #838485;
 }
 
-.bg-light-content h1, .bg-white h1, .bg-dark .bg-white h1, *[class*='bg-black'] .bg-white h1, .bg-light-content h2, .bg-white h2, .bg-dark .bg-white h2, *[class*='bg-black'] .bg-white h2, .bg-light-content h3, .bg-white h3, .bg-dark .bg-white h3, *[class*='bg-black'] .bg-white h3, .bg-light-content h4, .bg-white h4, .bg-dark .bg-white h4, *[class*='bg-black'] .bg-white h4, .bg-light-content h5, .bg-white h5, .bg-dark .bg-white h5, *[class*='bg-black'] .bg-white h5, .bg-light-content h6, .bg-white h6, .bg-dark .bg-white h6, *[class*='bg-black'] .bg-white h6 {
+.bg-light-content h1,
+.bg-white h1,
+.bg-dark .bg-white h1,
+*[class*="bg-black"] .bg-white h1,
+.bg-light-content h2,
+.bg-white h2,
+.bg-dark .bg-white h2,
+*[class*="bg-black"] .bg-white h2,
+.bg-light-content h3,
+.bg-white h3,
+.bg-dark .bg-white h3,
+*[class*="bg-black"] .bg-white h3,
+.bg-light-content h4,
+.bg-white h4,
+.bg-dark .bg-white h4,
+*[class*="bg-black"] .bg-white h4,
+.bg-light-content h5,
+.bg-white h5,
+.bg-dark .bg-white h5,
+*[class*="bg-black"] .bg-white h5,
+.bg-light-content h6,
+.bg-white h6,
+.bg-dark .bg-white h6,
+*[class*="bg-black"] .bg-white h6 {
   color: #181a1c;
 }
 
-.bg-light-content a:not([class*='button']), .bg-white a:not([class*='button']) {
+.bg-light-content a:not([class*="button"]),
+.bg-white a:not([class*="button"]) {
   color: black;
 }
 
-.bg-light-content a:not([class*='button']):hover, .bg-white a:not([class*='button']):hover, .bg-light-content a:not([class*='button']):focus, .bg-white a:not([class*='button']):focus {
+.bg-light-content a:not([class*="button"]):hover,
+.bg-white a:not([class*="button"]):hover,
+.bg-light-content a:not([class*="button"]):focus,
+.bg-white a:not([class*="button"]):focus {
   color: #181a1c;
 }
 
-.bg-dark-content, .bg-dark, *[class*='bg-black'] {
+.bg-dark-content,
+.bg-dark,
+*[class*="bg-black"] {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bg-dark-content h1, .bg-dark h1, *[class*='bg-black'] h1, .bg-dark-content h2, .bg-dark h2, *[class*='bg-black'] h2, .bg-dark-content h3, .bg-dark h3, *[class*='bg-black'] h3, .bg-dark-content h4, .bg-dark h4, *[class*='bg-black'] h4, .bg-dark-content h5, .bg-dark h5, *[class*='bg-black'] h5, .bg-dark-content h6, .bg-dark h6, *[class*='bg-black'] h6 {
+.bg-dark-content h1,
+.bg-dark h1,
+*[class*="bg-black"] h1,
+.bg-dark-content h2,
+.bg-dark h2,
+*[class*="bg-black"] h2,
+.bg-dark-content h3,
+.bg-dark h3,
+*[class*="bg-black"] h3,
+.bg-dark-content h4,
+.bg-dark h4,
+*[class*="bg-black"] h4,
+.bg-dark-content h5,
+.bg-dark h5,
+*[class*="bg-black"] h5,
+.bg-dark-content h6,
+.bg-dark h6,
+*[class*="bg-black"] h6 {
   color: #fff;
 }
 
-.bg-dark-content h1 a, .bg-dark h1 a, *[class*='bg-black'] h1 a, .bg-dark-content h2 a, .bg-dark h2 a, *[class*='bg-black'] h2 a, .bg-dark-content h3 a, .bg-dark h3 a, *[class*='bg-black'] h3 a, .bg-dark-content h4 a, .bg-dark h4 a, *[class*='bg-black'] h4 a, .bg-dark-content h5 a, .bg-dark h5 a, *[class*='bg-black'] h5 a, .bg-dark-content h6 a, .bg-dark h6 a, *[class*='bg-black'] h6 a {
+.bg-dark-content h1 a,
+.bg-dark h1 a,
+*[class*="bg-black"] h1 a,
+.bg-dark-content h2 a,
+.bg-dark h2 a,
+*[class*="bg-black"] h2 a,
+.bg-dark-content h3 a,
+.bg-dark h3 a,
+*[class*="bg-black"] h3 a,
+.bg-dark-content h4 a,
+.bg-dark h4 a,
+*[class*="bg-black"] h4 a,
+.bg-dark-content h5 a,
+.bg-dark h5 a,
+*[class*="bg-black"] h5 a,
+.bg-dark-content h6 a,
+.bg-dark h6 a,
+*[class*="bg-black"] h6 a {
   color: white;
 }
 
-.bg-dark-content h1 a:hover, .bg-dark h1 a:hover, *[class*='bg-black'] h1 a:hover, .bg-dark-content h1 a:focus, .bg-dark h1 a:focus, *[class*='bg-black'] h1 a:focus, .bg-dark-content h2 a:hover, .bg-dark h2 a:hover, *[class*='bg-black'] h2 a:hover, .bg-dark-content h2 a:focus, .bg-dark h2 a:focus, *[class*='bg-black'] h2 a:focus, .bg-dark-content h3 a:hover, .bg-dark h3 a:hover, *[class*='bg-black'] h3 a:hover, .bg-dark-content h3 a:focus, .bg-dark h3 a:focus, *[class*='bg-black'] h3 a:focus, .bg-dark-content h4 a:hover, .bg-dark h4 a:hover, *[class*='bg-black'] h4 a:hover, .bg-dark-content h4 a:focus, .bg-dark h4 a:focus, *[class*='bg-black'] h4 a:focus, .bg-dark-content h5 a:hover, .bg-dark h5 a:hover, *[class*='bg-black'] h5 a:hover, .bg-dark-content h5 a:focus, .bg-dark h5 a:focus, *[class*='bg-black'] h5 a:focus, .bg-dark-content h6 a:hover, .bg-dark h6 a:hover, *[class*='bg-black'] h6 a:hover, .bg-dark-content h6 a:focus, .bg-dark h6 a:focus, *[class*='bg-black'] h6 a:focus {
+.bg-dark-content h1 a:hover,
+.bg-dark h1 a:hover,
+*[class*="bg-black"] h1 a:hover,
+.bg-dark-content h1 a:focus,
+.bg-dark h1 a:focus,
+*[class*="bg-black"] h1 a:focus,
+.bg-dark-content h2 a:hover,
+.bg-dark h2 a:hover,
+*[class*="bg-black"] h2 a:hover,
+.bg-dark-content h2 a:focus,
+.bg-dark h2 a:focus,
+*[class*="bg-black"] h2 a:focus,
+.bg-dark-content h3 a:hover,
+.bg-dark h3 a:hover,
+*[class*="bg-black"] h3 a:hover,
+.bg-dark-content h3 a:focus,
+.bg-dark h3 a:focus,
+*[class*="bg-black"] h3 a:focus,
+.bg-dark-content h4 a:hover,
+.bg-dark h4 a:hover,
+*[class*="bg-black"] h4 a:hover,
+.bg-dark-content h4 a:focus,
+.bg-dark h4 a:focus,
+*[class*="bg-black"] h4 a:focus,
+.bg-dark-content h5 a:hover,
+.bg-dark h5 a:hover,
+*[class*="bg-black"] h5 a:hover,
+.bg-dark-content h5 a:focus,
+.bg-dark h5 a:focus,
+*[class*="bg-black"] h5 a:focus,
+.bg-dark-content h6 a:hover,
+.bg-dark h6 a:hover,
+*[class*="bg-black"] h6 a:hover,
+.bg-dark-content h6 a:focus,
+.bg-dark h6 a:focus,
+*[class*="bg-black"] h6 a:focus {
   color: #fff;
 }
 
-.bg-dark-content a:not([class*='button']), .bg-dark a:not([class*='button']), *[class*='bg-black'] a:not([class*='button']) {
+.bg-dark-content a:not([class*="button"]),
+.bg-dark a:not([class*="button"]),
+*[class*="bg-black"] a:not([class*="button"]) {
   color: white;
 }
 
-.bg-dark-content a:not([class*='button']):hover, .bg-dark a:not([class*='button']):hover, *[class*='bg-black'] a:not([class*='button']):hover, .bg-dark-content a:not([class*='button']):focus, .bg-dark a:not([class*='button']):focus, *[class*='bg-black'] a:not([class*='button']):focus {
+.bg-dark-content a:not([class*="button"]):hover,
+.bg-dark a:not([class*="button"]):hover,
+*[class*="bg-black"] a:not([class*="button"]):hover,
+.bg-dark-content a:not([class*="button"]):focus,
+.bg-dark a:not([class*="button"]):focus,
+*[class*="bg-black"] a:not([class*="button"]):focus {
   color: #fff;
 }
 
@@ -1999,15 +2202,15 @@ body.loaded:after {
 }
 
 *.text-green {
-  color: #32CD32;
+  color: #32cd32;
 }
 
 *.text-red {
-  color: #E32227;
+  color: #e32227;
 }
 
 *.text-yellow {
-  color: #FFAE42;
+  color: #ffae42;
 }
 
 .stroke-text {
@@ -2024,7 +2227,12 @@ body.loaded:after {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  background: -webkit-linear-gradient(
+    45deg,
+    #ff82f3 0%,
+    #7b13ff 50%,
+    #400d64 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

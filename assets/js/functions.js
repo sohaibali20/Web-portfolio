@@ -28,7 +28,11 @@ $(window).on("load", function () {
 });
 
 if ($body.attr("data-preloader") === "true") {
-  $body.append($("<div class='preloader'><div><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>"));
+  $body.append(
+    $(
+      "<div class='preloader'><div><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>"
+    )
+  );
 }
 
 /*===============================================
@@ -38,23 +42,24 @@ var customCursor = document.getElementById("cursor");
 
 if (customCursor) {
   var cursor = document.getElementById("cursor");
-  document.addEventListener('mousemove', function(e) {
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
   });
 
-  var mouseElms = document.querySelectorAll("a, button, input, textarea, .cursor-link");
+  var mouseElms = document.querySelectorAll(
+    "a, button, input, textarea, .cursor-link"
+  );
 
-  mouseElms.forEach(function(mouseElm) {
-    mouseElm.addEventListener("mouseenter", function() {
+  mouseElms.forEach(function (mouseElm) {
+    mouseElm.addEventListener("mouseenter", function () {
       cursor.classList.add("scale-cursor");
     });
-    mouseElm.addEventListener("mouseleave", function() {
+    mouseElm.addEventListener("mouseleave", function () {
       cursor.classList.remove("scale-cursor");
     });
   });
 }
-
 
 /*===============================================
   3. Header Nav Menu
@@ -66,12 +71,11 @@ if (headerNav.length) {
   //
   // Menu Toggle //
   //
-  toggleBtn.on("click", function() {
+  toggleBtn.on("click", function () {
     if (headerNav.hasClass("show")) {
       headerNav.removeClass("show");
       toggleBtn.removeClass("active");
-    }
-    else {
+    } else {
       headerNav.addClass("show");
       toggleBtn.addClass("active");
     }
@@ -79,8 +83,8 @@ if (headerNav.length) {
   //
   // Close Menu //
   //
-  $(document).on("click", function(e) {
-    if ( $(e.target).closest(".nav-box, #nav-toggle").length === 0 ) {
+  $(document).on("click", function (e) {
+    if ($(e.target).closest(".nav-box, #nav-toggle").length === 0) {
       if (headerNav.hasClass("show")) {
         headerNav.removeClass("show");
         toggleBtn.removeClass("active");
@@ -96,15 +100,15 @@ var scrollTopBtn = document.querySelector(".scrolltotop");
 
 if (scrollTopBtn) {
   // Show, Hide //
-  window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 700) { // 700px from top
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 700) {
+      // 700px from top
       scrollTopBtn.classList.add("show");
     } else {
       scrollTopBtn.classList.remove("show");
     }
   });
 }
-
 
 /*===============================================
   5. Sliders
@@ -195,7 +199,6 @@ var swiper = new Swiper(".testimonial-slider", {
   },
 });
 
-
 /*===============================================
   6. Lightbox
 ===============================================*/
@@ -207,13 +210,13 @@ var $lightboxImage = $(".lightbox-image-box");
 $lightboxImage.each(function () {
   var $this = $(this);
   $this.magnificPopup({
-    type: 'image',
+    type: "image",
     fixedContentPos: false,
     removalDelay: 200,
-    closeOnContentClick: true, 
+    closeOnContentClick: true,
     image: {
-      titleSrc: 'data-image-title'
-    }
+      titleSrc: "data-image-title",
+    },
   });
 });
 
@@ -222,7 +225,7 @@ $lightboxImage.each(function () {
 //
 var $lightboxMedia = $(".lightbox-media-box");
 
-$lightboxMedia.each(function() {
+$lightboxMedia.each(function () {
   var $this = $(this);
   $this.magnificPopup({
     type: "iframe",
@@ -232,21 +235,20 @@ $lightboxMedia.each(function() {
     iframe: {
       patterns: {
         youtube: {
-          index: 'youtube.com/',
-          id: 'v=',
-          src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
+          index: "youtube.com/",
+          id: "v=",
+          src: "//www.youtube.com/embed/%id%?autoplay=1&rel=0",
         },
-          vimeo: {
-          index: 'vimeo.com/',
-          id: '/',
-          src: '//player.vimeo.com/video/%id%?autoplay=1'
-        }
+        vimeo: {
+          index: "vimeo.com/",
+          id: "/",
+          src: "//player.vimeo.com/video/%id%?autoplay=1",
+        },
       },
-      srcAction: "iframe_src" 
-    }
+      srcAction: "iframe_src",
+    },
   });
 });
-
 
 /*===============================================
   7. Google Maps
@@ -254,14 +256,14 @@ $lightboxMedia.each(function() {
 var mapCanvas = $(".gmap");
 
 if (mapCanvas.length) {
-  var m,divId,initLatitude, initLongitude, map;
+  var m, divId, initLatitude, initLongitude, map;
 
   for (var i = 0; i < mapCanvas.length; i++) {
     m = mapCanvas[i];
 
     initLatitude = m.dataset["latitude"];
     initLongitude = m.dataset["longitude"];
-    divId = "#"+ m["id"];
+    divId = "#" + m["id"];
 
     map = new GMaps({
       el: divId,
@@ -270,22 +272,21 @@ if (mapCanvas.length) {
       zoom: 16,
       scrollwheel: false,
       styles: [
-          /* style your map at https://snazzymaps.com/editor and paste JSON here */
-      ]
+        /* style your map at https://snazzymaps.com/editor and paste JSON here */
+      ],
     });
 
     map.addMarker({
-      lat : initLatitude,
-      lng : initLongitude
+      lat: initLatitude,
+      lng: initLongitude,
     });
   }
 }
 
-
 /*===============================================
   8. Contact Form
 ===============================================*/
-$("#contactform").on("submit", function(e) {
+$("#contactform").on("submit", function (e) {
   var name = $("#name").val();
   var email = $("#email").val();
   var subject = $("#subject").val();
@@ -302,22 +303,20 @@ $("#contactform").on("submit", function(e) {
   }
   if (message === "") {
     $("#message").addClass("error-color");
-  }
-
-  else {
+  } else {
     $.ajax({
-      url:"assets/php/contact-form.php",
-      data:$(this).serialize(),
-      type:"POST",
-      success:function(data){
+      url: "assets/php/contact-form.php",
+      data: $(this).serialize(),
+      type: "POST",
+      success: function (data) {
         $("#success").addClass("show-result"); //=== Show Success Message==
-        $("#contactform").each(function(){
+        $("#contactform").each(function () {
           this.reset();
         });
       },
-      error:function(data){
+      error: function (data) {
         $("#error").addClass("show-result"); //===Show Error Message====
-      }
+      },
     });
     var forms = $("#contactform input, #contactform textarea");
     forms.removeClass("error-color");
